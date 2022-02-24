@@ -37,6 +37,8 @@ const addGames = (New) => {
   console.log("onSubmit", New);
 
   fetch(`${API}/Games/`, {
+            
+   //CRUD: method:"POST"
 
     method: "POST",
 
