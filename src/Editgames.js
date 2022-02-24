@@ -16,6 +16,8 @@ export function Updategame() {
             `${API}/Games/${id}`,
         {
         
+       //CRUD: method:"GET"  
+            
         method:"GET",
 
         })
@@ -66,6 +68,8 @@ function Store({game}){
       fetch(
           `${API}/Games/${game.id}`,{
 
+  //CRUD: method:"PUT"
+              
             method:"PUT",
             body: JSON.stringify(Updategame),
           headers: {
