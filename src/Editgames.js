@@ -10,6 +10,7 @@ export function Updategame() {
 
     const [game,setGame] = useState(null);
 
+  //UseEffect is used here:
     useEffect(()=>{
 
         fetch(
