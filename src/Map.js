@@ -18,8 +18,11 @@ export function Map() {
     const getGames = () => {
 
       fetch(`${API}/Games`,{
-
+          
+//CRUD: method:"GET"
+          
         method : "GET",
+          
       })//promise
 
       .then((data)=> data.json())//Response Object
