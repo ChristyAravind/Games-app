@@ -27,9 +27,9 @@ h2 {
   gap: 20px;
   display: flex;
   flex-direction: column;
-  width:500px;
-  justify-content: center;
-  align-items: center;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .games {
   height: min-content;
