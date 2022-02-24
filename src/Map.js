@@ -34,6 +34,8 @@ export function Map() {
   const Deletegame = (id)=>{
 
     fetch(`${API}/Games/${id}`, {
+        
+        //CRUD: method:"DELETE"
       method: "DELETE",
     }).then(() => getGames());
 
