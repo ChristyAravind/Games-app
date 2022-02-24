@@ -7,7 +7,6 @@ import Paper from '@mui/material/Paper';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import * as React from "react";
-
 import Toolbar from '@mui/material/Toolbar';
 import './App.css';
 import { Home } from './Home';
@@ -30,7 +29,9 @@ export default function App() {
     });
 
   return (
+
     <ThemeProvider theme={theme}>
+
      <Paper style={{borderRadius: "0px" , minHeight: "100vh"}} elevation={4}>
 
     <div className="App">
@@ -60,33 +61,34 @@ export default function App() {
                 {mode === "light" ? "dark" : "light"} Mode
               </Button>
 
-
-
     </Toolbar>
     </AppBar>
+
     <Switch>
 
     <Route exact path="/">
 
       <Home/>
+
     </Route>
 
     <Route path="/Games">
 
       <Map />
+
     </Route>
 
     <Route path="/Addgames">
 
       <Addgames/>
+
     </Route>
 
     <Route path="/Editgames/:id">
 
     <Updategame />
+
 </Route>
-
-
 
     </Switch>
 
