@@ -29,6 +29,8 @@ export function Map() {
 
       .then((gms)=> setList(gms));
      }
+    
+      //UseEffect is used here:
      useEffect(() => getGames(),[])
 
   const Deletegame = (id)=>{
